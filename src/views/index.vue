@@ -25,7 +25,7 @@ watch(page, () => getData())
 async function getData(isInitial?: boolean) {
   isLoading.value = true
 
-  const { data } = await axios<ServerResponse>(`http://flems.github.io/test/api/news/${page.value}`)
+  const { data } = await axios<ServerResponse>(`https://flems.github.io/test/api/news/${page.value}`)
 
   articles.value.push(...data.items)
 
@@ -70,7 +70,7 @@ getData(true)
 
       <ul
         v-if="isLoading"
-        class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 md:gap-x-12 md:gap-y-16 items-stretch"
+        class="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-8 md:gap-x-12 md:gap-y-16 items-stretch"
       >
         <li
           v-for="n in 3"
