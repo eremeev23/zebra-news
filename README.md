@@ -8,7 +8,7 @@
 
 - Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
 ####
-- <b><i> Или просто IDE от JetBrains ;) </i></b>
+- <b><i> Или просто IDE от JetBrains 😎 </i></b>
 
 ### Установка зависимостей
 ` yarn `
